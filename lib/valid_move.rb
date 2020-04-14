@@ -1,9 +1,13 @@
 # code your #valid_move? method here
 
 #Method with input position as an int
-def valid_move(position)
+def valid_move(board, position)
   if(position > 0 && position < 8)
-    return true
+    if (board[position] == " " || board[position] == "" || board[position] == nil)
+      return true
+    elsif (board[position] == "X" || board[position] == "O")
+      return false
+    end
   else
     return false
   end
