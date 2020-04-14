@@ -4,7 +4,7 @@
 def valid_move?(board, position)
   if(position >= 0 && position < 8)
     if (board[position] == " " || board[position] == "" || board[position] == nil)
-      puts true
+      return true
     elsif (board[position] == "X" || board[position] == "O")
       return false
     end
@@ -14,5 +14,3 @@ def valid_move?(board, position)
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
-
-valid_move?([" ", " ", "X", " ", " ", " ", " ", "O", " "], 0)
