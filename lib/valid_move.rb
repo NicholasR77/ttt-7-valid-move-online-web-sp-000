@@ -1,7 +1,7 @@
 # code your #valid_move? method here
 
 #Method with input position as an int
-def valid_move(board, position)
+def valid_move?(board, position)
   if(position > 0 && position < 8)
     if (board[position] == " " || board[position] == "" || board[position] == nil)
       return true
