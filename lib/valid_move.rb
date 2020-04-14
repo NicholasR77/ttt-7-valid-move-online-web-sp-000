@@ -14,3 +14,5 @@ def valid_move?(board, position)
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+
+valid_move([" ", " ", "X", " ", " ", " ", " ", "O", " "], 9)
